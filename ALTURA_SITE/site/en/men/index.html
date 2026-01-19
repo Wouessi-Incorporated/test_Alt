@@ -1,46 +1,49 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>ALTURA Homme — ALTURA</title>
-  <link rel="stylesheet" href="/assets/styles.css"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ALTURA — Men's Collection</title>
+  <link rel="stylesheet" href="/assets/styles.css" />
   <script defer src="/assets/app.js"></script>
 </head>
+
 <body data-page="collection" data-lang="en" data-gender="men">
-<header class="header">
-  <div class="container inner">
-    <a class="brand" href="/en/">ALTURA</a>
-    <nav class="nav">
-      <a href="/en/women/">Shop Women</a>
-      <a href="/en/men/">Shop Men</a>
-      <a href="/en/cart/" class="pill">Cart</a>
-      <a href="/en/" class="pill">en</a>
-    </nav>
-  </div>
-</header>
-<main class="container">
-  <div class="section">
-    <h1 class="h1">ALTURA Homme</h1>
-    <p class="sub">Shoes & bags designed for tall men.</p>
-  </div>
-  <div id="products" class="products"></div>
-  <div class="section">
-    <div class="card" style="padding:16px">
-      <div class="trust">
-        <span class="badge">SSL secure checkout</span>
-        <span class="badge">Easy exchanges</span>
-        <span class="badge">Tall-fit guarantee</span>
-        <span class="badge">Stripe + PayPal</span>
+  <header class="header">
+    <div class="container">
+      <a class="brand" href="/en/">ALTURA</a>
+      <nav class="navlinks">
+        <a href="/en/women/">Women</a>
+        <a href="/en/men/">Men</a>
+        <a href="/en/support/">Support</a>
+      </nav>
+      <div class="right">
+        <button class="btn btn-ghost btn-small" data-lang-switch="fr">FR</button>
+        <button class="btn btn-ghost btn-small" data-currency-toggle>EUR</button>
+        <a class="btn btn-primary btn-small" href="/en/cart/">Cart <span class="badge" data-cart-count>0</span></a>
       </div>
     </div>
-  </div>
-</main>
-<footer class="footer">
-  <div class="container inner">
-    <div class="muted">© <span id="year"></span> ALTURA.com</div>
-    <div class="muted"><a href="/en/support/">Support</a> · <a href="/en/returns/">Returns</a> · <a href="/en/privacy/">Privacy</a> · <a href="/en/terms/">Terms</a></div>
-  </div>
-</footer>
+  </header>
+
+  <main class="container" style="padding: 60px 24px 100px;">
+    <div style="margin-bottom: 60px;">
+      <h1 style="font-size: 3rem; margin-bottom: 12px;">Men's Collection</h1>
+      <p class="muted" style="font-size: 1.125rem; max-width: 600px;">Quality footwear and accessories designed for tall
+        men. Scale-correct proportions, superior comfort, and timeless style.</p>
+    </div>
+
+    <div class="products-grid" data-products-grid>
+      <!-- Injected by app.js -->
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container" style="text-align: center;">
+      <div class="brand" style="margin-bottom: 32px;">ALTURA</div>
+      <p class="muted" style="font-size: 0.8rem;">© 2026 ALTURA LUXURY. ALL RIGHTS RESERVED.</p>
+    </div>
+  </footer>
 </body>
+
 </html>

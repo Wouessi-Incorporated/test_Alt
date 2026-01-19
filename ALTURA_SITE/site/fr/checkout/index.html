@@ -1,43 +1,59 @@
 <!doctype html>
 <html lang="fr">
+
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ALTURA — Paiement Sécurisé</title>
-  <meta name="description" content="Paiement sécurisé avec Stripe et PayPal."/>
-  <link rel="stylesheet" href="/assets/styles.css"/>
+  <meta name="description" content="Finalisez votre commande ALTURA en toute sécurité avec Stripe ou PayPal." />
+  <link rel="stylesheet" href="/assets/styles.css" />
   <script defer src="/assets/app.js"></script>
 </head>
+
 <body data-page="checkout" data-lang="fr">
-<header class="header">
-  <div class="container inner">
-    <a class="brand" href="/fr/">ALTURA</a>
-    <nav class="nav">
-      <a href="/fr/cart/">Panier</a>
-      <button class="lang" data-lang-switch="en">EN</button>
-    </nav>
-  </div>
-</header>
-<main class="container">
-  <div class="hero" style="margin-top:18px">
-    <div>
-      <div class="kicker">Confiance</div>
-      <h1 class="h1">Paiement sécurisé</h1>
-      <p class="sub">Stripe et PayPal. Paiement chiffré. Garantie grand gabarit.</p>
+  <header class="header">
+    <div class="container">
+      <a class="brand" href="/fr/">ALTURA</a>
+      <nav class="navlinks">
+        <a href="/fr/women/">Femme</a>
+        <a href="/fr/men/">Homme</a>
+        <a href="/fr/support/">Assistance</a>
+      </nav>
+      <div class="right">
+        <button class="btn btn-ghost btn-small" data-lang-switch="en">EN</button>
+        <button class="btn btn-ghost btn-small" data-currency-toggle>EUR</button>
+        <a class="btn btn-primary btn-small" href="/fr/cart/">Panier <span class="badge" data-cart-count>0</span></a>
+      </div>
     </div>
-  </div>
-  <div id="checkoutRoot"></div>
-</main>
-<footer class="footer">
-  <div class="container">
-    <div class="trust">
-      <span class="badge">SSL</span>
-      <span class="badge">Paiement chiffré</span>
-      <span class="badge">Échanges faciles</span>
-      <span class="badge">Garantie</span>
-      <span class="badge">Support WhatsApp</span>
+  </header>
+
+  <main class="container" style="padding: 160px 40px 120px;">
+    <div id="checkoutRoot" class="animate">
+      <!-- Injecté par app.js -->
+      <div style="text-align: center; padding: 100px 0;">
+        <p class="muted">Préparation du paiement sécurisé...</p>
+      </div>
     </div>
-  </div>
-</footer>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="trust" style="grid-template-columns: repeat(4, 1fr); margin-bottom: 80px;">
+        <div class="trust-item"><span>🔒</span> <span
+            style="font-size:0.75rem;text-transform:uppercase;letter-spacing:0.1em">PAIEMENT SÉCURISÉ</span></div>
+        <div class="trust-item"><span>↔️</span> <span
+            style="font-size:0.75rem;text-transform:uppercase;letter-spacing:0.1em">ÉCHANGES FACILES</span></div>
+        <div class="trust-item"><span>📏</span> <span
+            style="font-size:0.75rem;text-transform:uppercase;letter-spacing:0.1em">GARANTIE TALL-FIT</span></div>
+        <div class="trust-item"><span>💳</span> <span
+            style="font-size:0.75rem;text-transform:uppercase;letter-spacing:0.1em">DÉBIT/CRÉDIT/PAYPAL</span></div>
+      </div>
+      <div style="text-align: center;">
+        <p class="muted" style="font-size:0.8rem;text-transform:uppercase;letter-spacing:0.2em">© 2026 ALTURA LUXURY.
+          TOUS DROITS RÉSERVÉS.</p>
+      </div>
+    </div>
+  </footer>
 </body>
+
 </html>

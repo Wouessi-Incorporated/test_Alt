@@ -1,35 +1,64 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>ALTURA — Cart</title>
-  <link rel="stylesheet" href="/assets/styles.css"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ALTURA — Shopping Bag</title>
+  <link rel="stylesheet" href="/assets/styles.css" />
   <script defer src="/assets/app.js"></script>
 </head>
+
 <body data-page="cart" data-lang="en">
-<header class="header">
-  <div class="container inner">
-    <a class="brand" href="/en/">ALTURA</a>
-    <nav class="nav">
-      <a href="/en/women/">Shop Women</a>
-      <a href="/en/men/">Shop Men</a>
-      <a href="/fr/cart/" class="lang">FR</a>
-      <a href="/en/cart/" class="cart">Cart</a>
-    </nav>
-  </div>
-</header>
-<main class="container" style="padding:18px 16px 40px">
-  <div class="card" style="padding:16px">
-    <h1 class="h2" style="margin:0 0 8px">Your cart</h1>
-    <p class="muted" style="margin:0 0 16px">Review items, then proceed to secure checkout.</p>
-    <div id="cartContainer"></div>
-  </div>
-</main>
-<footer class="footer">
-  <div class="container inner">
-    <div class="muted">Secure checkout • Easy exchanges • Tall-fit guarantee</div>
-  </div>
-</footer>
+  <header class="header">
+    <div class="container">
+      <a class="brand" href="/en/">ALTURA</a>
+      <nav class="navlinks">
+        <a href="/en/women/">Women</a>
+        <a href="/en/men/">Men</a>
+        <a href="/en/support/">Support</a>
+      </nav>
+      <div class="right">
+        <button class="btn btn-ghost btn-small" data-lang-switch="fr">FR</button>
+        <button class="btn btn-ghost btn-small" data-currency-toggle>EUR</button>
+        <a class="btn btn-primary btn-small" href="/en/cart/">Bag <span class="badge" data-cart-count>0</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" style="padding: 160px 40px 120px;">
+    <div class="section-head animate" style="text-align: left; margin-left: 0; margin-bottom: 60px;">
+      <h1 style="font-size: 4rem; line-height: 1.1; margin-bottom: 24px;">Your Shopping Bag</h1>
+      <p class="muted" style="font-size: 1.25rem; font-weight: 300;">Review your selection before proceeding to the
+        checkout atelier.</p>
+    </div>
+
+    <div id="cartRoot" class="animate">
+      <!-- Injected by app.js -->
+      <div style="text-align: center; padding: 100px 0;">
+        <p class="muted">Entering the atelier...</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="trust" style="grid-template-columns: repeat(4, 1fr); margin-bottom: 80px;">
+        <div class="trust-item"><span>🔒</span> <span
+            style="font-size:0.75rem;text-transform:uppercase;letter-spacing:0.1em">SECURE PAYMENTS</span></div>
+        <div class="trust-item"><span>↔️</span> <span
+            style="font-size:0.75rem;text-transform:uppercase;letter-spacing:0.1em">EXCHANGE POLICY</span></div>
+        <div class="trust-item"><span>📏</span> <span
+            style="font-size:0.75rem;text-transform:uppercase;letter-spacing:0.1em">TALL-FIT GUARANTEE</span></div>
+        <div class="trust-item"><span>💳</span> <span
+            style="font-size:0.75rem;text-transform:uppercase;letter-spacing:0.1em">DEBIT/CREDIT/PAYPAL</span></div>
+      </div>
+      <div style="text-align: center;">
+        <p class="muted" style="font-size:0.8rem;text-transform:uppercase;letter-spacing:0.2em">© 2026 ALTURA LUXURY.
+          ALL RIGHTS RESERVED.</p>
+      </div>
+    </div>
+  </footer>
 </body>
+
 </html>

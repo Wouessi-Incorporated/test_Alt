@@ -1,8 +1,59 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>ALTURA — Order Confirmed</title><link rel="stylesheet" href="/assets/styles.css"/></head>
-<body><div class="container" style="padding:40px 16px"><div class="card" style="padding:16px">
-<h1 class="h2" style="margin:0 0 8px">Order confirmed</h1>
-<p class="muted" style="margin:0">Thank you. A confirmation email will arrive shortly.</p>
-<div class="sp"></div><a class="btn" href="/en/">Back to home</a>
-</div></div></body></html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ALTURA — Order Confirmed</title>
+    <link rel="stylesheet" href="/assets/styles.css" />
+    <script defer src="/assets/app.js"></script>
+</head>
+
+<body data-page="order-success" data-lang="en">
+    <header class="header">
+        <div class="container">
+            <a class="brand" href="/en/">ALTURA</a>
+            <nav class="navlinks">
+                <a href="/en/women/">Women</a>
+                <a href="/en/men/">Men</a>
+                <a href="/en/support/">Support</a>
+            </nav>
+            <div class="right">
+                <button class="btn btn-ghost btn-small" data-lang-switch="fr">FR</button>
+                <button class="btn btn-ghost btn-small" data-currency-toggle>EUR</button>
+                <a class="btn btn-primary btn-small" href="/en/cart/">Bag <span class="badge"
+                        data-cart-count>0</span></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container" style="padding: 160px 40px;">
+        <div class="card pad animate"
+            style="max-width: 700px; margin: 0 auto; text-align: center; background: var(--surface)">
+            <div style="font-size: 5rem; margin-bottom: 32px">✨</div>
+            <h1 style="font-size: 3.5rem; margin-bottom: 24px; font-family:'Playfair Display',serif">Order Confirmed
+            </h1>
+            <p class="muted" style="font-size: 1.25rem; line-height: 1.8; margin-bottom: 48px; font-weight: 300">Thank
+                you for your acquisition. Our team is now preparing your items with the utmost care. A formal
+                confirmation has been sent to your email.</p>
+            <div class="cta-row" style="justify-content: center">
+                <a class="btn btn-primary" href="/en/">Back to Boutique</a>
+                <a class="btn btn-ghost" href="/en/support/">Need Assistance?</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div style="text-align: center;">
+                <p class="muted" style="font-size:0.8rem;text-transform:uppercase;letter-spacing:0.2em">© 2026 ALTURA
+                    LUXURY. ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        localStorage.removeItem('altura_cart_v1');
+    </script>
+</body>
+
+</html>

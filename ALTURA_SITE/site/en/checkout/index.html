@@ -1,135 +1,59 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ALTURA — Secure Checkout</title>
-  <meta name="description" content="Secure checkout with Stripe and PayPal."/>
-  <link rel="stylesheet" href="/assets/styles.css"/>
+  <meta name="description" content="Complete your ALTURA order securely with Stripe or PayPal." />
+  <link rel="stylesheet" href="/assets/styles.css" />
   <script defer src="/assets/app.js"></script>
 </head>
+
 <body data-page="checkout" data-lang="en">
-<header class="header">
-  <div class="container inner">
-    <a class="brand" href="/en/">ALTURA</a>
-    <nav class="nav">
-      <a href="/en/women/">Shop Women</a>
-      <a href="/en/men/">Shop Men</a>
-      <a href="/en/cart/" class="pill">Cart <span data-cart-count>0</span></a>
-    </nav>
-  </div>
-</header>
-
-<main class="container">
-  <div class="grid2">
-    <section class="card" style="padding:16px">
-      <h1 class="h2">Secure checkout</h1>
-      <p class="muted">Pay with Stripe (Card, Apple Pay, Google Pay) or PayPal. Your data is encrypted.</p>
-
-      <div class="trust">
-        <div class="badge">SSL Secure</div>
-        <div class="badge">Encrypted payments</div>
-        <div class="badge">Easy exchanges</div>
-        <div class="badge">Tall-fit guarantee</div>
+  <header class="header">
+    <div class="container">
+      <a class="brand" href="/en/">ALTURA</a>
+      <nav class="navlinks">
+        <a href="/en/women/">Women</a>
+        <a href="/en/men/">Men</a>
+        <a href="/en/support/">Support</a>
+      </nav>
+      <div class="right">
+        <button class="btn btn-ghost btn-small" data-lang-switch="fr">FR</button>
+        <button class="btn btn-ghost btn-small" data-currency-toggle>EUR</button>
+        <a class="btn btn-primary btn-small" href="/en/cart/">Bag <span class="badge" data-cart-count>0</span></a>
       </div>
-
-      <div class="sp"></div>
-      <form id="checkout-form" class="grid" autocomplete="on">
-        <div class="grid2">
-          <div>
-            <label class="muted">Email</label>
-            <input class="input" name="email" required placeholder="you@domain.com"/>
-          </div>
-          <div>
-            <label class="muted">Phone (optional)</label>
-            <input class="input" name="phone" placeholder="+33 ..."/>
-          </div>
-        </div>
-
-        <div class="grid2">
-          <div>
-            <label class="muted">First name</label>
-            <input class="input" name="first_name" required/>
-          </div>
-          <div>
-            <label class="muted">Last name</label>
-            <input class="input" name="last_name" required/>
-          </div>
-        </div>
-
-        <div>
-          <label class="muted">Address</label>
-          <input class="input" name="address1" required placeholder="Street address"/>
-        </div>
-
-        <div class="grid2">
-          <div>
-            <label class="muted">City</label>
-            <input class="input" name="city" required/>
-          </div>
-          <div>
-            <label class="muted">Postal code</label>
-            <input class="input" name="postal" required/>
-          </div>
-        </div>
-
-        <div class="grid2">
-          <div>
-            <label class="muted">Country</label>
-            <input class="input" name="country" required placeholder="FR"/>
-          </div>
-          <div>
-            <label class="muted">WhatsApp updates</label>
-            <label style="display:flex;gap:10px;align-items:center;margin-top:10px">
-              <input type="checkbox" name="whatsapp_opt_in"/>
-              <span class="muted">Opt in for order updates & size help</span>
-            </label>
-          </div>
-        </div>
-
-        <div class="card" style="padding:12px;background:#fff">
-          <div class="row" style="justify-content:space-between;align-items:center">
-            <div>
-              <div><strong>Pay now</strong></div>
-              <div class="muted">Choose your payment method</div>
-            </div>
-            <div class="row" style="gap:8px;flex-wrap:wrap">
-              <button class="btn" type="button" data-pay="stripe">Pay with Stripe</button>
-              <button class="btn secondary" type="button" data-pay="paypal">Pay with PayPal</button>
-            </div>
-          </div>
-          <div class="sp"></div>
-          <div class="muted" style="font-size:13px">By paying you agree to our <a href="/en/terms/"><u>Terms</u></a> and <a href="/en/privacy/"><u>Privacy</u></a>.</div>
-        </div>
-
-        <div id="checkout-error" class="muted" style="display:none;color:#b00020"></div>
-      </form>
-
-    </section>
-
-    <aside class="card" style="padding:16px">
-      <h2 class="h3">Order summary</h2>
-      <div id="order-summary" class="grid"></div>
-      <div class="sp"></div>
-      <div class="row" style="justify-content:space-between"><span class="muted">Subtotal</span><strong id="sum-subtotal">—</strong></div>
-      <div class="row" style="justify-content:space-between"><span class="muted">Shipping</span><strong id="sum-shipping">—</strong></div>
-      <div class="row" style="justify-content:space-between"><span class="muted">Total</span><strong id="sum-total">—</strong></div>
-      <div class="sp"></div>
-      <div class="muted" style="font-size:13px">Secure checkout • Easy exchanges • Tall-fit guarantee</div>
-    </aside>
-  </div>
-</main>
-
-<footer class="footer">
-  <div class="container grid">
-    <div class="muted">© <span id="year"></span> ALTURA</div>
-    <div class="row" style="gap:12px;flex-wrap:wrap">
-      <a href="/en/returns/">Returns</a>
-      <a href="/en/guarantee/">Tall-Fit Guarantee</a>
-      <a href="/en/support/">Support</a>
-      <a href="/en/privacy/">Privacy</a>
     </div>
-  </div>
-</footer>
+  </header>
+
+  <main class="container" style="padding: 160px 40px 120px;">
+    <div id="checkoutRoot" class="animate">
+      <!-- Injected by app.js -->
+      <div style="text-align: center; padding: 100px 0;">
+        <p class="muted">Preparing secure payment...</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="trust" style="grid-template-columns: repeat(4, 1fr); margin-bottom: 80px;">
+        <div class="trust-item"><span>🔒</span> <span
+            style="font-size:0.75rem;text-transform:uppercase;letter-spacing:0.1em">SECURE PAYMENTS</span></div>
+        <div class="trust-item"><span>↔️</span> <span
+            style="font-size:0.75rem;text-transform:uppercase;letter-spacing:0.1em">EXCHANGE POLICY</span></div>
+        <div class="trust-item"><span>📏</span> <span
+            style="font-size:0.75rem;text-transform:uppercase;letter-spacing:0.1em">TALL-FIT GUARANTEE</span></div>
+        <div class="trust-item"><span>💳</span> <span
+            style="font-size:0.75rem;text-transform:uppercase;letter-spacing:0.1em">DEBIT/CREDIT/PAYPAL</span></div>
+      </div>
+      <div style="text-align: center;">
+        <p class="muted" style="font-size:0.8rem;text-transform:uppercase;letter-spacing:0.2em">© 2026 ALTURA LUXURY.
+          ALL RIGHTS RESERVED.</p>
+      </div>
+    </div>
+  </footer>
 </body>
+
 </html>

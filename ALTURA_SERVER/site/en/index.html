@@ -1,135 +1,181 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>ALTURA — Shoes & Bags for Tall People</title>
-  <meta name="description" content="Shoes and bags designed for tall bodies. EU sizes 42–50. Built for confidence."/>
-  <link rel="stylesheet" href="/assets/styles.css"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ALTURA — Engineered for Stature</title>
+  <meta name="description"
+    content="Luxury footwear and accessories designed exclusively for tall men and women. EU sizes 42–50." />
+  <link rel="stylesheet" href="/assets/styles.css" />
   <script defer src="/assets/app.js"></script>
 </head>
+
 <body data-lang="en" data-page="home">
-<header class="header">
-  <div class="container row">
-    <a class="brand" href="/en/">ALTURA</a>
-    <nav class="navlinks">
-      <a href="/en/women/">Women</a>
-      <a href="/en/men/">Men</a>
-      <a href="/en/support/">Support</a>
-    </nav>
-    <div class="right">
-      <button class="lang btn ghost" data-lang-switch>FR</button>
-      <button class="btn ghost" data-currency-toggle>EUR</button>
-      <a class="cart" href="/en/cart/">Cart <span class="badge" data-cart-count>0</span></a>
+  <header class="header">
+    <div class="container">
+      <a class="brand" href="/en/">ALTURA</a>
+      <nav class="navlinks">
+        <a href="/en/women/">Women</a>
+        <a href="/en/men/">Men</a>
+        <a href="/en/support/">Support</a>
+      </nav>
+      <div class="right">
+        <button class="btn btn-ghost btn-small" data-lang-switch="fr">FR</button>
+        <button class="btn btn-ghost btn-small" data-currency-toggle>EUR</button>
+        <a class="btn btn-primary btn-small" href="/en/cart/">Bag <span class="badge" data-cart-count>0</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="container hero">
+      <div class="animate">
+        <div class="kicker">Collection N°1 • 2026</div>
+        <h1>Designed for Stature. Built for Confidence.</h1>
+        <p class="sub">Luxury footwear and accessories engineered with scale-correct proportions. Finally, elegance that
+          respects your height.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="/en/women/">Shop Women</a>
+          <a class="btn btn-ghost" href="/en/men/">Shop Men</a>
+        </div>
+        <div class="trust">
+          <div class="trust-item"><span>🔒</span> <span>SECURED BY STRIPE</span></div>
+          <div class="trust-item"><span>↔️</span> <span>EASY EXCHANGES</span></div>
+          <div class="trust-item"><span>📏</span> <span>TALL-FIT GUARANTEE</span></div>
+          <div class="trust-item"><span>🌍</span> <span>GLOBAL SHIPPING</span></div>
+        </div>
+      </div>
+      <div class="animate" style="animation-delay: 0.2s">
+        <div class="card" style="border:none;background:none;box-shadow:var(--shadow-lg)">
+          <div class="img-container" style="aspect-ratio:1/1.2;border-radius:var(--radius-md)">
+            <img src="/assets/products/p1.jpg" alt="ALTURA Signature Look"
+              style="width:100%;height:100%;object-fit:cover">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head animate">
+          <div class="chip" style="margin-bottom:24px">The Alternative</div>
+          <h2>Not just scaled up. Engineered from zero.</h2>
+          <p class="muted" style="font-size:1.25rem;line-height:1.8">ALTURA is about proportion. Long lines, clean
+            silhouettes, and bags scaled to a taller frame. We don't just add centimeters; we rethink the entire
+            geometry.</p>
+        </div>
+        <div class="grid3">
+          <div class="card pad animate" style="animation-delay:0.1s">
+            <h3 style="font-size:1.75rem;margin-bottom:20px">Scale-Correct</h3>
+            <p class="muted">Elongated silhouettes that remain elegant — never bulky. Designed specifically for the tall
+              frame.</p>
+          </div>
+          <div class="card pad animate" style="animation-delay:0.2s">
+            <h3 style="font-size:1.75rem;margin-bottom:20px">Size Specialist</h3>
+            <p class="muted">Women EU 42–46 • Men EU 46–50. We focus exclusively on the sizes traditional luxury
+              ignores.</p>
+          </div>
+          <div class="card pad animate" style="animation-delay:0.3s">
+            <h3 style="font-size:1.75rem;margin-bottom:20px">Total Trust</h3>
+            <p class="muted">Encrypted payments, priority exchanges, and our signature Tall-Fit guarantee on every
+              order.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="background:#050505">
+      <div class="container">
+        <div class="section-head animate">
+          <h2>The Collection</h2>
+          <p class="muted">Limited releases. Engineered for the presence you command.</p>
+        </div>
+        <div class="products-grid" data-products-grid>
+          <!-- Injected by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head animate">
+          <div class="chip" style="margin-bottom:24px">Community</div>
+          <h2>Representation Matters</h2>
+          <p class="muted">Celebrating diversity in height and background. Our models represent the global ALTURA
+            community.</p>
+        </div>
+        <div class="grid4" style="gap:20px">
+          <div class="card animate" style="animation-delay:0.1s;border:none"><img src="/assets/models/m1.jpg"
+              alt="Tall model" style="aspect-ratio:3/4;object-fit:cover"></div>
+          <div class="card animate" style="animation-delay:0.2s;border:none"><img src="/assets/models/m2.jpg"
+              alt="Tall model" style="aspect-ratio:3/4;object-fit:cover"></div>
+          <div class="card animate" style="animation-delay:0.3s;border:none"><img src="/assets/models/m3.jpg"
+              alt="Tall model" style="aspect-ratio:3/4;object-fit:cover"></div>
+          <div class="card animate" style="animation-delay:0.4s;border:none"><img src="/assets/models/m4.jpg"
+              alt="Tall model" style="aspect-ratio:3/4;object-fit:cover"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="card pad animate"
+          style="background:var(--surface);border-color:var(--gold);text-align:center;padding:120px 40px">
+          <h2 style="font-size:4rem;margin-bottom:24px;line-height:1.1">Command the space.</h2>
+          <p
+            style="font-size:1.5rem;color:var(--ink-muted);margin-bottom:48px;font-weight:300;max-width:700px;margin-left:auto;margin-right:auto">
+            Invest in your confidence today with ALTURA. Designed for your height, built for your stature.</p>
+          <div class="cta-row" style="justify-content:center">
+            <a class="btn btn-primary" href="/en/women/">Shop Women</a>
+            <a class="btn btn-ghost" href="/en/men/">Shop Men</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="foot-grid">
+        <div>
+          <div class="brand">ALTURA</div>
+          <p class="muted" style="max-width:400px;line-height:1.8">Designed for stature. Built for confidence. We are
+            redefining the standard for the globally tall, ensuring luxury respects every centimeter.</p>
+        </div>
+        <div>
+          <h4>Shopping</h4>
+          <div class="footer-links">
+            <a href="/en/women/">Women's Atelier</a>
+            <a href="/en/men/">Men's Atelier</a>
+            <a href="/en/guarantee/">Tail-Fit Guarantee</a>
+            <a href="/en/returns/">Exchange Policy</a>
+          </div>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <div class="footer-links">
+            <a href="/en/support/">Concierge & FAQ</a>
+            <a href="/en/privacy/">Privacy Policy</a>
+            <a href="/en/terms/">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+      <div style="margin-top:100px;padding-top:40px;border-top:1px solid var(--border);text-align:center">
+        <p class="muted" style="font-size:0.8rem;text-transform:uppercase;letter-spacing:0.2em">© 2026 ALTURA LUXURY.
+          ALL RIGHTS RESERVED.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="sticky-bar animate" style="animation-delay: 2s">
+    <div class="muted" style="font-size:0.8rem;text-transform:uppercase;letter-spacing:0.2em;font-weight:700">Explore
+      ALTURA Selection</div>
+    <div class="row" style="gap:15px">
+      <a class="btn btn-primary btn-small" href="/en/women/">Women</a>
+      <a class="btn btn-ghost btn-small" href="/en/men/">Men</a>
     </div>
   </div>
-</header>
-
-<main class="container">
-  <section class="hero">
-    <div>
-      <div class="kicker">EU sizes 42–50 • Designed for stature • Limited drops</div>
-      <h1 class="h1">Shoes & Bags Designed for Tall Bodies.</h1>
-      <p class="sub">Finally, proportion-perfect footwear and bags for tall women and tall men — without compromise.</p>
-      <div class="ctaRow">
-        <a class="btn" href="/en/women/">Shop Women</a>
-        <a class="btn ghost" href="/en/men/">Shop Men</a>
-      </div>
-      <div class="trust">
-        <div class="trustItem">🔒 Secure checkout</div>
-        <div class="trustItem">↔ Easy exchanges</div>
-        <div class="trustItem">✅ Tall-fit guarantee</div>
-        <div class="trustItem">🌍 Inclusive design</div>
-      </div>
-    </div>
-    <div class="heroMedia">
-      <div class="card" style="overflow:hidden">
-        <img src="/assets/products/p1.jpg" alt="ALTURA products" style="width:100%;height:auto;display:block"/>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="sectionHead">
-      <h2>Not resized. Designed from scratch.</h2>
-      <p class="muted">ALTURA is about proportion — long lines, clean silhouettes, and bags scaled to tall frames.</p>
-    </div>
-    <div class="grid3">
-      <div class="card pad">
-        <h3>Proportion-first</h3>
-        <p class="muted">Long silhouettes that stay elegant — never bulky.</p>
-      </div>
-      <div class="card pad">
-        <h3>Tall sizing focus</h3>
-        <p class="muted">Women EU 42–46 • Men EU 46–50</p>
-      </div>
-      <div class="card pad">
-        <h3>Trust built in</h3>
-        <p class="muted">Secure payments, easy exchanges, clear policies.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="sectionHead">
-      <h2>Shop the launch drop</h2>
-      <p class="muted">10 hero products. Every item has its own funnel page.</p>
-    </div>
-    <div class="products" data-products-grid></div>
-  </section>
-
-  <section class="section">
-    <div class="sectionHead">
-      <h2>Inclusive tall models</h2>
-      <p class="muted">Representation across backgrounds — because tall people are everywhere.</p>
-    </div>
-    <div class="models" data-models-strip></div>
-  </section>
-
-  <section class="section finalCta">
-    <div class="card pad" style="display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap">
-      <div>
-        <h2 style="margin:0">Stop compromising.</h2>
-        <div class="muted">Start wearing ALTURA today.</div>
-      </div>
-      <div class="ctaRow">
-        <a class="btn" href="/en/women/">Shop Women</a>
-        <a class="btn ghost" href="/en/men/">Shop Men</a>
-      </div>
-    </div>
-  </section>
-</main>
-
-<footer class="footer">
-  <div class="container footGrid">
-    <div>
-      <div class="brand">ALTURA</div>
-      <div class="muted">Designed for stature. Built for confidence.</div>
-    </div>
-    <div>
-      <a href="/en/returns/">Returns & Exchanges</a><br/>
-      <a href="/en/guarantee/">Tall-fit guarantee</a><br/>
-      <a href="/en/privacy/">Privacy</a><br/>
-      <a href="/en/terms/">Terms</a>
-    </div>
-    <div>
-      <div class="muted">Payments</div>
-      <div>Stripe • PayPal</div>
-      <div class="sp"></div>
-      <div class="muted">Support</div>
-      <div><a href="/en/support/">Contact & FAQ</a></div>
-    </div>
-  </div>
-</footer>
-
-<div class="stickyBar" data-sticky-bar>
-  <div class="container row" style="justify-content:space-between;gap:10px">
-    <div class="muted" style="font-size:13px">ALTURA — Tall sizing EU 42–50</div>
-    <div class="row" style="gap:10px">
-      <a class="btn small" href="/en/women/">Shop Women</a>
-      <a class="btn small ghost" href="/en/men/">Shop Men</a>
-    </div>
-  </div>
-</div>
 </body>
+
 </html>

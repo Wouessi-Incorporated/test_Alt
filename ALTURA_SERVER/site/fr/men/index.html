@@ -1,46 +1,68 @@
 <!doctype html>
 <html lang="fr">
+
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>ALTURA Homme — ALTURA</title>
-  <link rel="stylesheet" href="/assets/styles.css"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ALTURA — Atelier Homme</title>
+  <link rel="stylesheet" href="/assets/styles.css" />
   <script defer src="/assets/app.js"></script>
 </head>
+
 <body data-page="collection" data-lang="fr" data-gender="men">
-<header class="header">
-  <div class="container inner">
-    <a class="brand" href="/fr/">ALTURA</a>
-    <nav class="nav">
-      <a href="/fr/women/">Femme</a>
-      <a href="/fr/men/">Homme</a>
-      <a href="/fr/cart/" class="pill">Cart</a>
-      <a href="/fr/" class="pill">fr</a>
-    </nav>
-  </div>
-</header>
-<main class="container">
-  <div class="section">
-    <h1 class="h1">ALTURA Homme</h1>
-    <p class="sub">Chaussures & sacs pensés pour les hommes grands.</p>
-  </div>
-  <div id="products" class="products"></div>
-  <div class="section">
-    <div class="card" style="padding:16px">
-      <div class="trust">
-        <span class="badge">SSL secure checkout</span>
-        <span class="badge">Easy exchanges</span>
-        <span class="badge">Tall-fit guarantee</span>
-        <span class="badge">Stripe + PayPal</span>
+  <header class="header">
+    <div class="container">
+      <a class="brand" href="/fr/">ALTURA</a>
+      <nav class="navlinks">
+        <a href="/fr/women/">Femme</a>
+        <a href="/fr/men/">Homme</a>
+        <a href="/fr/support/">Assistance</a>
+      </nav>
+      <div class="right">
+        <button class="btn btn-ghost btn-small" data-lang-switch="en">EN</button>
+        <button class="btn btn-ghost btn-small" data-currency-toggle>EUR</button>
+        <a class="btn btn-primary btn-small" href="/fr/cart/">Panier <span class="badge" data-cart-count>0</span></a>
       </div>
     </div>
-  </div>
-</main>
-<footer class="footer">
-  <div class="container inner">
-    <div class="muted">© <span id="year"></span> ALTURA.com</div>
-    <div class="muted"><a href="/fr/support/">Support</a> · <a href="/fr/returns/">Returns</a> · <a href="/fr/privacy/">Privacy</a> · <a href="/fr/terms/">Terms</a></div>
-  </div>
-</footer>
+  </header>
+
+  <main class="container" style="padding: 160px 40px 120px;">
+    <div class="section-head animate" style="text-align: left; margin-left: 0; margin-bottom: 80px;">
+      <div class="chip" style="margin-bottom:24px">L'Atelier</div>
+      <h1 style="font-size: 5rem; line-height: 1.1; margin-bottom: 24px;">Collection Homme</h1>
+      <p class="muted" style="font-size: 1.5rem; max-width: 600px; font-weight: 300;">Des souliers et sacs pensés pour
+        l'allure des hommes de grande taille. Chaque ligne est calculée pour votre stature.</p>
+    </div>
+
+    <div class="products-grid" data-products-grid>
+      <!-- Injected by app.js -->
+    </div>
+
+    <div class="section">
+      <div class="card pad animate" style="background: var(--surface); border-color: var(--gold);">
+        <div class="trust" style="grid-template-columns: repeat(4, 1fr);">
+          <div class="trust-item"><span>🔒</span> <span
+              style="font-size:0.75rem;text-transform:uppercase;letter-spacing:0.1em">SÉCURISÉ</span></div>
+          <div class="trust-item"><span>↔️</span> <span
+              style="font-size:0.75rem;text-transform:uppercase;letter-spacing:0.1em">ÉCHANGES FACILES</span></div>
+          <div class="trust-item"><span>📏</span> <span
+              style="font-size:0.75rem;text-transform:uppercase;letter-spacing:0.1em">GARANTIE TALL-FIT</span></div>
+          <div class="trust-item"><span>🌍</span> <span
+              style="font-size:0.75rem;text-transform:uppercase;letter-spacing:0.1em">LIVRAISON MONDIALE</span></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div style="text-align: center;">
+        <div class="brand" style="margin-bottom:40px">ALTURA</div>
+        <p class="muted" style="font-size:0.8rem;text-transform:uppercase;letter-spacing:0.2em">© 2026 ALTURA LUXURY.
+          TOUS DROITS RÉSERVÉS.</p>
+      </div>
+    </div>
+  </footer>
 </body>
+
 </html>
