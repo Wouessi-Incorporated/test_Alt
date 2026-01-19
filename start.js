@@ -1,5 +1,4 @@
-﻿#!/usr/bin/env node
-/**
+﻿/**
  * ALTURA - Single Entry Point
  * Serves the Altura funnel store
  */

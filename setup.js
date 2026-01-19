@@ -1,5 +1,4 @@
-﻿#!/usr/bin/env node
-/**
+﻿/**
  * ALTURA Setup Script
  * Configure environment and prepare the application
  */
