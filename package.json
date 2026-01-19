@@ -1,0 +1,19 @@
+﻿{
+  "name": "altura",
+  "version": "1.0.0",
+  "description": "ALTURA - Proprietary Funnel Store",
+  "main": "start.js",
+  "scripts": {
+    "start": "node start.js",
+    "server": "cd ALTURA_SERVER/server && node server.js",
+    "generate": "cd ALTURA_DOCS/docs && node generate_pages.js",
+    "setup": "node setup.js",
+    "dev": "npm run setup && npm run server"
+  },
+  "keywords": ["altura", "funnel", "store"],
+  "author": "Wouessi-Incorporated",
+  "license": "PROPRIETARY",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

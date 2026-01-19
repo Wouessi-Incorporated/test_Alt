@@ -1,0 +1,28 @@
+﻿# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Data
+ALTURA_SERVER/server/data/
+*.log
+
+# Build artifacts
+dist/
+build/

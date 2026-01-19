@@ -1,0 +1,16 @@
+[Unit]
+Description=ALTURA Backend API
+After=network.target
+
+[Service]
+Type=simple
+User=www-data
+WorkingDirectory=/var/www/altura/server
+ExecStart=/usr/bin/node server.js
+Restart=always
+RestartSec=5
+Environment=NODE_ENV=production
+EnvironmentFile=/var/www/altura/server/.env
+
+[Install]
+WantedBy=multi-user.target
