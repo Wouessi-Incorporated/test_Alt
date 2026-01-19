@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>ALTURA</title>
+  <script>
+    (function(){
+      const lang = (navigator.language || 'en').toLowerCase();
+      const target = lang.startsWith('fr') ? '/fr/' : '/en/';
+      location.replace(target);
+    })();
+  </script>
+</head>
+<body></body>
+</html>
