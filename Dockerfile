@@ -20,12 +20,15 @@ COPY ALTURA_ADDONS ./ALTURA_ADDONS
 # Create data directory for persistence
 RUN mkdir -p /app/ALTURA_SERVER/server/data
 
-# Expose port
-EXPOSE 8080
+# Set default port (can be overridden by environment variable)
+ENV PORT=3000
 
-# Health check
+# Expose port - uses PORT variable
+EXPOSE 3000
+
+# Health check - checks against dynamic port
 HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
-  CMD node -e "require('http').get('http://localhost:8080', (r) => {if (r.statusCode !== 200) throw new Error(r.statusCode)})" || exit 1
+  CMD node -e "const p = process.env.PORT || 3000; require('http').get('http://localhost:' + p, (r) => {if (r.statusCode !== 200) throw new Error(r.statusCode)})" || exit 1
 
 # Start the application
 CMD ["node", "start.js"]

@@ -6,10 +6,10 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "8080:8080"
+      - "3000:3000"
     environment:
       NODE_ENV: production
-      PORT: 8080
+      PORT: 3000
       BASE_URL: ${BASE_URL}
       FX_EURUSD: ${FX_EURUSD:-1.10}
       STRIPE_SECRET_KEY: ${STRIPE_SECRET_KEY}
@@ -27,7 +27,7 @@ services:
       - altura-data:/app/ALTURA_SERVER/server/data
     restart: unless-stopped
     healthcheck:
-      test: ["CMD", "node", "-e", "require('http').get('http://localhost:8080', (r) => {if (r.statusCode !== 200) throw new Error(r.statusCode)})"]
+      test: ["CMD", "node", "-e", "const p = process.env.PORT || 3000; require('http').get('http://localhost:' + p, (r) => {if (r.statusCode !== 200) throw new Error(r.statusCode)})"]
       interval: 30s
       timeout: 10s
       retries: 3
